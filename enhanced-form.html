@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced HTML5 Page</title>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; line-height: 1.5; }
+    section { margin-bottom: 2rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+    fieldset { margin-bottom: 1.5rem; padding: 1rem; border: 1px solid #aaa; }
+    label { display: block; margin-top: 1rem; }
+    input, select, textarea { width: 100%; padding: 0.5rem; margin-top: 0.25rem; box-sizing: border-box; }
+    input[type="submit"] { width: auto; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Features Showcase</h1>
+    <p>Organized content and a validated form using pure HTML5.</p>
+  </header>
+
+  <section>
+    <h2>Technologies</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+    </ul>
+    <h3>Learning Steps</h3>
+    <ol>
+      <li>Structure</li>
+      <li>Style</li>
+      <li>Interaction</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Schedule</h2>
+    <table>
+      <tr><th>Day</th><th>Topic</th><th>Hours</th></tr>
+      <tr><td>Mon</td><td>HTML</td><td>3</td></tr>
+      <tr><td>Tue</td><td>CSS</td><td>3</td></tr>
+      <tr><td>Wed</td><td>Forms</td><td>2</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media</h2>
+    <video width="300" controls>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    <img src="image.jpg" alt="Example image" width="300">
+  </section>
+
+  <section>
+    <h2>Feedback Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Info</legend>
+        <label for="name">Name *</label>
+        <input id="name" name="name" required minlength="2" placeholder="Jane Doe">
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com">
+        <label for="dob">DOB</label>
+        <input id="dob" name="dob" type="date">
+      </fieldset>
+
+      <fieldset>
+        <legend>Account</legend>
+        <label for="username">Username *</label>
+        <input id="username" name="username" required pattern="[A-Za-z0-9]{5,}">
+        <label for="password">Password *</label>
+        <input id="password" name="password" type="password" required minlength="6">
+        <label for="userid">User ID</label>
+        <input id="userid" name="userid" value="USER123" readonly>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+        <label for="rating">Rating (1–5)</label>
+        <input id="rating" name="rating" type="number" min="1" max="5" required>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="3"></textarea>
+        <label for="category">Category</label>
+        <select id="category" name="category">
+          <option value="ui">UI</option>
+          <option value="content">Content</option>
+          <option value="other">Other</option>
+        </select>
+        <label><input type="checkbox" name="subscribe" checked> Subscribe to updates</label>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025</p>
+  </footer>
+
+</body>
+</html>
